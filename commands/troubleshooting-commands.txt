@@ -1,0 +1,57 @@
+AWS EC2 IT SUPPORT TROUBLESHOOTING COMMANDS
+
+1. Check hostname
+hostname
+
+2. Check network interfaces
+ip addr
+
+3. Check routing table
+ip route
+
+4. Test network connectivity
+ping <target>
+
+5. Test HTTP/HTTPS connectivity
+curl <URL>
+
+6. Check current directory
+pwd
+
+7. List files and permissions
+ls -l
+
+8. Test file permissions
+chmod 000 test.txt
+chmod 644 test.txt
+cat test.txt
+
+9. Check disk space
+df -h
+
+10. Find directory sizes
+sudo du -sh /* 2>/dev/null
+
+11. Check disks and partitions
+lsblk
+
+12. Check failed services
+systemctl --failed
+
+13. Check system error logs
+journalctl -p err -n 20
+
+14. Check memory usage
+free -h
+
+15. Install CPU stress testing tool
+sudo dnf install -y stress-ng
+
+16. Check stress-ng version
+stress-ng --version
+
+17. Generate CPU load for monitoring
+stress-ng --cpu 2 --timeout 10m --metrics-brief
+
+18. Stop a running command
+Ctrl + C
